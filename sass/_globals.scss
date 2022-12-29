@@ -1,0 +1,7 @@
+@use "components";
+@use "mixins";
+
+html {
+   @include mixins.section-display();
+}
+
