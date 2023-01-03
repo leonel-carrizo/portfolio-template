@@ -1,13 +1,16 @@
-// Components
-@use "components";
-
 
 // Global Styles
 @use "globals";
+
+
+// Components
+@use "components";
+
+// Varibles
+@use "variables";
+
 
 // mixins
 @use "mixins";
 
 
-// Varibles
-@use "variables";
