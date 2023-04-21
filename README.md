@@ -2,7 +2,7 @@
 Simple portfolio template to show your experience and skills.
 
 <div align="center" >
-  <img alt="Demo" src="./screenshots/Screenshot-1.png" width="350"/>
+  <img alt="Demo" src="./screenshots/Screenshot-1.png" width="450"/>
   <img alt="Demo" src="./screenshots/Screenshot-2.png" width="350"/>
   <img alt="Demo" src="./screenshots/Screenshot-responsive.png" width="150"/>
 </div>
