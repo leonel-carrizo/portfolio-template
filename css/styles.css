@@ -992,8 +992,13 @@ section {
     margin: 1.2rem 0;
   }
   .section .contact-container .contact-content-con .right-contact .contact-form .submit-btn {
-    margin-left: 1rem;
     justify-content: center;
+  }
+  .section .contact-container .contact-content-con .right-contact .contact-form .submit-btn .btn-text {
+    padding: 0.1rem 1rem;
+  }
+  .section .contact-container .contact-content-con .right-contact .contact-form .submit-btn .btn-icon {
+    padding: 0.5rem;
   }
   .controls {
     top: auto;

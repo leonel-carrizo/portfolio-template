@@ -181,6 +181,7 @@
 						// .submit-btn {
 						// 	margin-left: 8rem;
 						// }
+            
 					}
 				}
 			}
@@ -332,8 +333,13 @@
 							margin: 1.2rem 0;
 						}
 						.submit-btn {
-							margin-left: 1rem;
 							justify-content: center;
+              .btn-text{
+                padding: 0.1rem 1rem;
+              }
+              .btn-icon{
+                padding: 0.5rem;
+              }
 						}
 					}
 				}
