@@ -74,13 +74,23 @@ section {
 
 .active {
 	display: block;
-	animation: scaleAnim 1s ease-in-out;
+	// animation: scaleAnim 1s ease-in-out;
+	// @keyframes scaleAnim {
+	// 	0% {
+	// 		transform: translateY(-100%) scaleY(0);
+	// 	}
+	// 	100% {
+	// 		transform: translateY(0) scaleY(1);
+	// 	}
+	// }
+	animation: scaleAnim 1s ease-in-out 0s 1 normal forwards;
 	@keyframes scaleAnim {
 		0% {
-			transform: translateY(-100%) scaleY(0);
+			transform: scale(0);
 		}
+
 		100% {
-			transform: translateY(0) scaleY(1);
+			transform: scale(1);
 		}
 	}
 }
@@ -126,8 +136,8 @@ section {
 .theme-btn {
 	top: 5%;
 	right: 3%;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: var(--color-white);
 	cursor: pointer;
@@ -535,31 +545,31 @@ section {
 
 // Contact Section
 .contact-content-con {
-	display: flex;
-	padding-top: 3.5rem;
+  left: 12rem;
+  display: flex;
+	margin-top: 5rem;
+  gap: 5rem;
 	.left-contact {
-		flex: 2;
-		h4 {
-			margin-top: 1rem;
-			font-size: 2rem;
-			text-transform: uppercase;
-		}
-		p {
+		.left-contact-des {
 			margin: 1rem 0;
+			text-align: justify;
 			line-height: 2rem;
 		}
 		.contact-info {
+			width: 35vw;
+      padding: 2.7rem 2rem;
 			.contact-item {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				p {
-					margin: 0.3rem 0 !important;
-					padding: 0 !important;
+					margin: 0.5rem 0;
+					padding: 0;
+          line-height: 2.2rem;
 				}
 				.icon {
 					display: grid;
-					grid-template-columns: 40px 1fr;
+					grid-template-columns: 3rem 1fr;
 				}
 				i {
 					display: flex;
@@ -570,7 +580,8 @@ section {
 		}
 		.contact-icon {
 			display: flex;
-			margin-top: 2rem;
+			margin-top: 3rem;
+			justify-content: center;
 			a {
 				display: flex;
 				align-items: center;
@@ -601,34 +612,41 @@ section {
 
 	.right-contact {
 		flex: 3;
-		margin-left: 3rem;
-		.input-control {
-			margin: 1.5rem;
-			input,
-			textarea {
-				border-radius: 30px;
-				font-weight: inherit;
-				font-size: inherit;
-				font-family: inherit;
-				padding: 0.8rem 1.1rem;
-				outline: none;
-				border: none;
-				background-color: var(--color-grey-5);
-				width: 100%;
-				color: var(--color-white);
-				resize: none;
-			}
+		h4 {
+			text-align: center;
+			font-size: 2rem;
+			text-transform: uppercase;
 		}
-		.i-c-2 {
-			display: flex;
-			:last-child {
+		.contact-form {
+      width: 30vw;
+			.input-control {
+				margin: 1.5rem;
+				input,
+				textarea {
+					border-radius: 30px;
+					font-weight: inherit;
+					font-size: inherit;
+					font-family: inherit;
+					padding: 0.8rem 1.1rem;
+					outline: none;
+					border: none;
+					background-color: var(--color-grey-5);
+					width: 100%;
+					color: var(--color-white);
+					resize: none;
+				}
+			}
+			.i-c-2 {
+				display: flex;
+				:last-child {
+					margin-left: 1.5rem;
+				}
+			}
+			.submit-btn {
+				display: flex;
+				justify-content: flex-start;
 				margin-left: 1.5rem;
 			}
-		}
-		.submit-btn {
-			display: flex;
-			justify-content: flex-start;
-			margin-left: 1.5rem;
 		}
 	}
 }
