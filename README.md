@@ -25,8 +25,9 @@ To get a local copy up and running follow these simple example steps.
 - A simple web browser (preferably Chrome or Firefox)
 - A IDE to deploy it.
 
-### Setup
-- Download this repository and open index.html file.
+### Demo
+[Click here for preview](https://leonel-carrizo.github.io/portfolio-template/)
+
 
 ## Authors
 👤 **Leonel Carrizo**
